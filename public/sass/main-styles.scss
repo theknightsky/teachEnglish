@@ -1,0 +1,93 @@
+@import "compass/css3";
+
+
+$red: desaturate(red, 50%);
+
+header#main-header{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	// overflow: hidden;
+	background-repeat: no-repeat;
+	background: url('../img/header-image.jpg');
+	// background: url('http://mellenst.com/-library/images/mango/mango-macbook-table.jpg');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: 1500px 1000px;
+
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(#000, 0.2);
+		z-index: 4444;
+	}
+
+	img{
+		height: auto;
+		max-width: 100%;
+	}
+
+	#profile-image{
+		position: absolute;
+		bottom: -100px;
+		padding: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		border: 10px solid #fff;
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		z-index: 5555;
+
+		@include border-radius(50%);
+
+		img{
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	h1.banner-title{
+		z-index: 5555;
+		font-size: 5em;
+		color: $red;
+		background: rgba(#fff, 0.8);
+		font-weight: bold;
+		padding: 0.5em 0;
+		text-align: center;
+		text-decoration: uppercase;
+		position: absolute;
+		width: 60%;
+		top: 150px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+#main-nav{
+	background: #fff;
+	li {
+		a{
+			color: #999;
+		}
+
+		&.active{
+			
+			a{
+				background: #ccc;
+				// color: $red;
+				// font-weight: bold;
+			}
+
+		}
+	}
+	z-index: 9999;
+}
