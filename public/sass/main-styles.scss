@@ -1,19 +1,107 @@
 @import "compass/css3";
 
 
-$red: desaturate(red, 50%);
+$red: #f04124;
+$blue: #008cba;
+$green: #43ac6a;
+$orange: #e99002;
+
+$light-red: lighten($red, 15%);
+$light-blue: lighten($blue, 20%);
+$light-green: lighten($green, 15%);
+$light-orange: lighten($orange, 20%);
+
+//---- Classes ----//
+.teaching-skill{
+	@include border-radius(3px);
+
+	width: 100%;
+	margin: 0;
+	padding: 2em;
+	text-align: center;
+	border: 1px solid #ddd;
+	background: #fff;
+
+	p{
+		padding-top: 2em;
+		color: #999;
+	}
+	h4{
+		@include border-radius(50%);
+
+		margin: 0 auto;
+		top: 1em;
+		color: #999;
+		text-align: center;
+		border: 8px solid #333;
+		width: 175px;
+		height: 175px;
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 160px;
+
+		&.red{
+			border-color: $light-red;
+		}
+		&.blue{
+			border-color: $light-blue;
+		}
+		&.green{
+			border-color: $light-green;
+		}
+		&.orange{
+			border-color: $light-orange;
+		}
+	}
+
+}
+
+section{
+	padding: 3em 0em 5em 0;
+
+	.section-header{
+		text-align: center;
+		padding-bottom: 2em;
+		color: #555;
+		font-size: 3em;
+		position: relative;
+
+		&::after{
+			content: '...';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 1em;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&.gray{
+		background: #f5f5f5;
+		.section-header{color: #999;}
+	}
+	&.light-red{
+		background: $light-red;
+		.section-header{color: #fff;}
+	}
+}
+
+body{
+	font-size: 1.5em;
+}
 
 header#main-header{
 	position: relative;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 500px;
+	height: 700px;
 	// overflow: hidden;
 	background-repeat: no-repeat;
 	background: url('../img/header-image.jpg');
 	// background: url('http://mellenst.com/-library/images/mango/mango-macbook-table.jpg');
-	background-position: center bottom;
+	background-position: center center;
 	background-attachment: fixed;
 	background-size: 1500px 1000px;
 
@@ -57,7 +145,7 @@ header#main-header{
 	h1.banner-title{
 		z-index: 5555;
 		font-size: 5em;
-		color: $red;
+		color: lighten($red, 10%);
 		background: rgba(#fff, 0.8);
 		font-weight: bold;
 		padding: 0.5em 0;
@@ -65,7 +153,7 @@ header#main-header{
 		text-decoration: uppercase;
 		position: absolute;
 		width: 60%;
-		top: 150px;
+		top: 250px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
@@ -74,17 +162,50 @@ header#main-header{
 
 #main-nav{
 	background: #fff;
+	font-size: 1.5em;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+	.container{height: 100%;}
+	.navbar-brand,
+	.navbar-form,
+	.navbar-nav li a {
+	    line-height: 80px;
+	    height: 80px;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    margin: 0;
+	    color: #999;
+	}
+	.navbar-nav > .open > a, .navbar-default .dropdown-menu{
+		color: #999;
+		background: #eee;
+		&:hover{
+			color: #999;
+			background: #eee;
+		}
+	}
 	li {
 		a{
-			color: #999;
+			position: relative;
+			color: #888;
 		}
-
+		a:hover{
+			color: #999;
+			background: #eee;
+		}
 		&.active{
-			
 			a{
-				background: #ccc;
-				// color: $red;
-				// font-weight: bold;
+				background: transparent;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 5px;
+					background: $red;
+				}
 			}
 
 		}
