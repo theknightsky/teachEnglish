@@ -20,7 +20,7 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">What you'll learn</a></li>
+      <li><a href="#">Skills</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
@@ -55,7 +55,7 @@
         </div>
         <div class="col-md-3">
           <div class="teaching-skill"><h4 class="blue">Pronunciation</h4>
-            <p>Improve your pronunciation with real time corrections</p>
+            <p>Learn how to pronounce words with an American accent</p>
           </div>
         </div>
         <div class="col-md-3">
@@ -71,11 +71,28 @@
       </div>
     </div>
   </section>
-  <section class="light-red">
+  <section class="light-red sm-nopad-b">
     <h1 class="section-header">Extensive Feedback</h1>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h2 style="font-weight: bold;">SIMPLE, CONVENIANT, ORGANIZED FEEDBACK REPORTS</h2>
+          <p>You'll get organized feedback after each lesson to help you review all the new things you'll learn. :)  This includes:
+            <ul>
+              <li>An overview of the topics discussed during the lesson</li>
+              <li>A list of  vocabulary words and definitions learned</li>
+              <li>A list of phrases and their definitions</li>
+            </ul>
+          </p>
+          <!-- <p>Each feedback report can be sent to you via email or Skype for easy access.  Even download and print the report to study anywhere you go.</p> -->
+          <br>
+          <div class="btn btn-block btn-open">Download example</div>
+        </div>
+          <div id="feedback">
+            <img src="img/Feedback.png" alt="">
+          </div>
+      </div>
+    </div>
   </section>
   <section>
     <h1 class="section-header">My Philosophy</h1>
