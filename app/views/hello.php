@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="stylesheets/main-styles.css">
 </head>
 <body>
-	<div id="main-nav" class="navbar navbar-default navbar-fixed-top">
+  <div id="page-top"></div>
+	<div id="main-nav" class="navbar navbar-default navbar-fixed-top nav-big">
   <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -15,25 +16,23 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">SK</a>
+    <a class="navbar-brand" href="#" style="font-weight: bold;">SK</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Skills</a></li>
+      <li class="active"><a href="#">Lessons</a></li>
+      <li><a href="#">Feedback</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">한국어어</a></li>
+          <li><a href="#">한국어</a></li>
           <li><a href="#">日本語</a></li>
         </ul>
       </li>
       <li class="navbar-form">
-        <!-- <div class="navbar-form"> -->
-          <button type="button" class="btn btn-danger navbar-btn">Book me!</button>
-        <!-- </div> -->
+          <button type="button" class="btn btn-danger" href="https://www.skimatalk.com/t/skylerknight" target="_blank">Book me!</button>
       </li>
     </ul>
   </div>
@@ -65,7 +64,7 @@
         </div>
         <div class="col-md-3">
           <div class="teaching-skill"><h4 class="green">Listening</h4>
-            <p>No more recordings... Practice listening with a native speaker</p>
+            <p>Get real practice listening to a native English speaker</p>
           </div>
         </div>
       </div>
@@ -75,8 +74,8 @@
     <h1 class="section-header">Extensive Feedback</h1>
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
-          <h2 style="font-weight: bold;">SIMPLE, CONVENIANT, ORGANIZED FEEDBACK REPORTS</h2>
+        <div class="col-md-6">
+          <h2 class="fat">CONVENIANT AND REVIEWABLE FEEDBACK</h2>
           <p>You'll get organized feedback after each lesson to help you review all the new things you'll learn. :)  This includes:
             <ul>
               <li>An overview of the topics discussed during the lesson</li>
@@ -86,19 +85,83 @@
           </p>
           <!-- <p>Each feedback report can be sent to you via email or Skype for easy access.  Even download and print the report to study anywhere you go.</p> -->
           <br>
-          <div class="btn btn-block btn-open">Download example</div>
+          <div class="btn btn-block btn-open">VIEW EXAMPLE</div>
         </div>
-          <div id="feedback">
-            <img src="img/Feedback.png" alt="">
-          </div>
+        <div id="feedback">
+          <img src="img/FeedbackLarge.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gray">
+    <h1 class="section-header">My Philosophy</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <h2 class="fat">Languages are skills, not subjects</h2>
+          <p>My experience has taught me that foreign languages are not subjects in school that you study, but they are skills that you obtain.  Similar to learning a new sport or skill such as soccer or drawing, languages can be learned by practicing every single day.</p>
+          <h2 class="fat">Listen and correct</h2>
+          <p>Languages are so much more than just another useful skill to add to our list of talents.  A foreign language is a whole new source of information, a whole new way to make friends and communicate with others, a whole new way to see the beautiful world around us.</p>
+
+        </div>
       </div>
     </div>
   </section>
   <section>
-    <h1 class="section-header">My Philosophy</h1>
+    <h1 class="section-header">How it works</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 step blue">
+          <h2>Step #1</h2>
+          <p>Download and intsall Skype</p>
+          <img src="img/Skype.png" alt="Skype">
+          <a class="btn btn-block btn-primary btn-link" href="http://www.skype.com/en/download-skype/skype-for-computer/" target="_blank">Download Skype</a>
+        </div>
+        <div class="col-md-4 step orange">
+          <h2>Step #2</h2>
+          <p>Sign up online at SkimaTalk.com</p>
+          <img src="img/SkimaTalk.png" alt="SkimaTalk">
+          <a class="btn btn-block btn-warning" href="http://www.skimatalk.com/" target="_blank">Sign up now</a>
+        </div>
+        <div class="col-md-4 step green">
+          <h2>Step #3</h2>
+          <p>Begin learning English with me</p>
+          <img src="img/Macbook.png" alt="Book with me!">
+          <a class="btn btn-block btn-success" href="https://www.skimatalk.com/t/skylerknight" target="_blank">Book your lesson!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="light-blue">
+    <h1 class="section-header">Already have Skype?</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-push-3">
+          <a class="btn btn-open btn-block btn-lg" href="https://www.skimatalk.com/t/skylerknight" target="_blank">Book a lesson now!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact me</h4>
+          <address>
+            <strong>Skyler Knight</strong><br>
+            <a href="mailto:#">tutorskylerknight@gmail.com</a>
+          </address>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#page-top">Back to top</a>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
