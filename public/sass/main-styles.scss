@@ -1,6 +1,11 @@
 @import "compass/css3";
 
+@import url("http://weloveiconfonts.com/api/?family=fontawesome");
 
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
 $red: #f04124;
 $blue: #008cba;
 $green: #43ac6a;
@@ -266,7 +271,7 @@ header#main-header{
 
 	h1.banner-title{
 		z-index: 5555;
-		font-size: 5em;
+		font-size: 3em;
 		color: lighten($red, 10%);
 		background: rgba(#fff, 0.8);
 		font-weight: bold;
@@ -274,128 +279,199 @@ header#main-header{
 		text-align: center;
 		text-decoration: uppercase;
 		position: absolute;
-		width: 60%;
+		width: 80%;
+		max-width: 800px;
 		top: 250px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
 	}
 }
-
 #main-nav{
-	@include transition(all 0.3s ease-in);
-	font-size: 1.5em;
+	font-size: 1.2em;
+	z-index: 9999;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
 
-	&.nav-small{
-		height: 80px;
-		background: #fff;
-		border-bottom: 1px solid #ddd;
-
-		.navbar-form{
-			@include transition(all 0.3s ease-in);
-			height: 80px;
-			line-height: 80px;
-		}
-		.navbar-brand{
-			@extends .navbar-form;
-			color: #999;
-		}
+	.navbar-brand{
+		color: #999;
 	}
 
-	&.nav-big{
-		background: rgba(#000, 0.2);
-		// background: transparent;
-		border: none;
-		color: #fff;
-		height: 100px;
-
-		.navbar-nav li a {
-			@include transition(all 0.3s ease-in);
-		    color: #fff;
-		    background: none;
-		    line-height: 100px;
-		    height: 100px;
-
-		    &:hover{
-		    	color: $red;
-		    	background: none;
-		    }
-		}
-		.dropdown-menu::before{
-			content: '';
-			display: block;
-			position: absolute;
-			width: 0; 
-			height: 0;
-			top: -10px;
-			right: 0;
-			left: 0;
-			margin: 0 auto;
-			border-left: 10px solid transparent;
-			border-right: 10px solid transparent;
-			border-bottom: 10px solid #fff;
-		}
-		.dropdown-menu li a{
-			background: #fff;
-			color: #999;
-			height: 60px;
-			line-height: 60px;
-
-			&:hover{
-				color: #999;
-				background: #eee;
-			}
-		}
+	.navbar-collapse{
+		border-color: #ddd;
 	}
 
 	.navbar-form{
-		@include transition(all 0.3s ease-in);
-		height: 100px;
-		background: none;
+		border: none;
+		.btn{
+			margin: 0 auto;
+			width: 60%;
+		}
+	}
+
+	.navbar-toggle{
+		background: #eee;
+		color: #999;
+		padding-left: 1em;
+		padding-right: 1em;
 		margin: 0;
-		padding-top: 0;
-		padding-bottom: 0;
-		line-height: 100px;
+		height: 100%;
 	}
-	.navbar-brand{
-		@extend .navbar-form;
-		// color: $red;
-		font-size: 1.5em;
-	}
+
 	.navbar-nav li a {
 		@include transition(all 0.3s ease-in);
-	    line-height: 80px;
-	    height: 80px;
-	    padding-top: 0;
-	    padding-bottom: 0;
-	    margin: 0;
 	    color: #999;
 	    background: none;
-
 	    &:hover{
-	    	color: #999;
-	    	background: #eee;
+	    	color: $red;
+	    	background: none;
 	    }
 	}
-	li.active a{
-    	background: none;
-
-    	&::before{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 5px;
-			background: $red;
-		}
+	.dropdown-menu::before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 0; 
+		height: 0;
+		top: -10px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #fff;
 	}
 	.dropdown-menu li a{
 		background: #fff;
 		color: #999;
+		&:hover{
+			color: #999;
+			background: #eee;
+		}
 	}
-	z-index: 9999;
 }
+
+// #main-nav{
+// 	@include transition(all 0.3s ease-in);
+// 	font-size: 1.5em;
+
+// 	&.nav-small{
+// 		height: 80px;
+// 		background: #fff;
+// 		border-bottom: 1px solid #ddd;
+
+// 		.navbar-form{
+// 			@include transition(all 0.3s ease-in);
+// 			height: 80px;
+// 			line-height: 80px;
+// 		}
+// 		.navbar-brand{
+// 			@extends .navbar-form;
+// 			color: #999;
+// 		}
+// 	}
+
+// 	&.nav-big{
+// 		background: rgba(#000, 0.2);
+// 		// background: transparent;
+// 		border: none;
+// 		color: #fff;
+// 		height: 100px;
+
+// 		.navbar-nav li a {
+// 			@include transition(all 0.3s ease-in);
+// 		    color: #fff;
+// 		    background: none;
+// 		    line-height: 100px;
+// 		    height: 100px;
+
+// 		    &:hover{
+// 		    	color: $red;
+// 		    	background: none;
+// 		    }
+// 		}
+// 		.dropdown-menu::before{
+// 			content: '';
+// 			display: block;
+// 			position: absolute;
+// 			width: 0; 
+// 			height: 0;
+// 			top: -10px;
+// 			right: 0;
+// 			left: 0;
+// 			margin: 0 auto;
+// 			border-left: 10px solid transparent;
+// 			border-right: 10px solid transparent;
+// 			border-bottom: 10px solid #fff;
+// 		}
+// 		.dropdown-menu li a{
+// 			background: #fff;
+// 			color: #999;
+// 			height: 60px;
+// 			line-height: 60px;
+
+// 			&:hover{
+// 				color: #999;
+// 				background: #eee;
+// 			}
+// 		}
+// 	}
+
+// 	.navbar-toggle{
+// 		height: 100px;
+// 		margin: 0;
+// 		line-height: 50px;
+// 		padding: 0 1em;
+// 		background: #000;
+// 	}
+
+// 	.navbar-form{
+// 		@include transition(all 0.3s ease-in);
+// 		height: 100px;
+// 		background: none;
+// 		margin: 0;
+// 		padding-top: 0;
+// 		padding-bottom: 0;
+// 		line-height: 100px;
+// 	}
+// 	.navbar-brand{
+// 		@extend .navbar-form;
+// 		font-size: 1.5em;
+// 	}
+// 	.navbar-nav li a {
+// 		@include transition(all 0.3s ease-in);
+// 	    line-height: 80px;
+// 	    height: 80px;
+// 	    padding-top: 0;
+// 	    padding-bottom: 0;
+// 	    margin: 0;
+// 	    color: #999;
+// 	    background: none;
+
+// 	    &:hover{
+// 	    	color: #999;
+// 	    	background: #eee;
+// 	    }
+// 	}
+// 	li.active a{
+//     	background: none;
+
+//     	&::before{
+// 			content: '';
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			right: 0;
+// 			height: 5px;
+// 			background: $red;
+// 		}
+// 	}
+// 	.dropdown-menu li a{
+// 		background: #fff;
+// 		color: #999;
+// 	}
+// 	z-index: 9999;
+// }
 
 #feedback{
 	@include transition(all 0.3s ease);
@@ -404,6 +480,23 @@ header#main-header{
 }
 
 //---- Media Queries ----//
+
+@media(min-width: 768px){
+	header#main-header{
+		h1.banner-title{
+			font-size: 5em;
+		}
+	}
+
+	#main-nav{
+		.navbar-form{
+			border: none;
+			.btn{
+				width: 100%;
+			}
+		}
+	}
+}
 
 @media(min-width: 992px){
 	section {

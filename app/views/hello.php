@@ -11,10 +11,7 @@
 	<div id="main-nav" class="navbar navbar-default navbar-fixed-top nav-big">
   <div class="container">
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+    <button type="button" class="navbar-toggle fontawesome-reorder" data-toggle="collapse" data-target=".navbar-responsive-collapse">
     </button>
     <a class="navbar-brand" href="#" style="font-weight: bold;">SK</a>
   </div>
@@ -32,7 +29,7 @@
         </ul>
       </li>
       <li class="navbar-form">
-          <button type="button" class="btn btn-danger" href="https://www.skimatalk.com/t/skylerknight" target="_blank">Book me!</button>
+          <button type="button" class="btn btn-danger btn-block btn-large" href="https://www.skimatalk.com/t/skylerknight" target="_blank">Book me!</button>
       </li>
     </ul>
   </div>
@@ -99,10 +96,10 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-8">
-          <h2 class="fat">Languages are skills, not subjects</h2>
-          <p>My experience has taught me that foreign languages are not subjects in school that you study, but they are skills that you obtain.  Similar to learning a new sport or skill such as soccer or drawing, languages can be learned by practicing every single day.</p>
-          <h2 class="fat">Listen and correct</h2>
-          <p>Languages are so much more than just another useful skill to add to our list of talents.  A foreign language is a whole new source of information, a whole new way to make friends and communicate with others, a whole new way to see the beautiful world around us.</p>
+          <h2 class="fat">Languages are learned through practice</h2>
+          <p>My experience has taught me that foreign languages are not subjects that you study, but they are skills that you obtain through practice.  Similar to learning a new sport or skill such as soccer or drawing, languages can be learned by practicing every single day.</p>
+          <h2 class="fat">I want to help others</h2>
+          <p>My goal is simple; I want to help you.  I enjoy sharing knowledge and helping others however I can.  I am kind, patient and I will carefully listen to you and correct you when you make mistakes. </p>
 
         </div>
       </div>
