@@ -18,7 +18,7 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Lessons</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a href="login">Feedback</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
